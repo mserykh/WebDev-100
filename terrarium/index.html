@@ -5,15 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome to my Virtual Terrarium</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-      <header class="page-header">
-        <h1>
-            My Terrarium
-        </h1>
-    </header>
-    <div id="page">
+
+    <main id="page">
       <div id="left-container" class="container">
         <div class="plant-holder">
           <img
@@ -71,6 +67,18 @@
             id="plant7"
           />
         </div>
+      </div>
+      <div id="terrarium" class="terrarium">
+        <header class="page-header">
+            <h1>My Terrarium</h1>
+          </header>
+        <div class="jar-top"></div>
+        <div class="jar-walls">
+          <div class="jar-glossy-long"></div>
+          <div class="jar-glossy-short"></div>
+          <div class="dirt"></div>
+        </div>
+        <div class="jar-bottom"></div>
       </div>
       <div id="right-container" class="container">
         <div class="plant-holder">
@@ -130,15 +138,6 @@
           />
         </div>
       </div>
-      <div id="terrarium">
-        <div class="jar-top"></div>
-        <div class="jar-walls">
-          <div class="jar-glossy-long"></div>
-          <div class="jar-glossy-short"></div>
-        </div>
-        <div class="dirt"></div>
-        <div class="jar-bottom"></div>
-      </div>
-    </div>
+    </main>
   </body>
 </html>
