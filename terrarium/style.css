@@ -84,20 +84,20 @@ h1 {
 }
 
 .jar-glossy-long {
-  position: absolute;
-  height: 22%;
-  width: 3%;
-  left: 5%;
+    position: absolute;
+    height: 22%;
+   width: 3%;
+   left: 5%;
   bottom: 18%;
   background: #dffdfa;
   border-radius: 4rem;
 }
 
 .jar-glossy-short {
-  position: absolute;
-  height: 6%;
-  width: 3%;
-  left: 5%;
+    position: absolute;
+    height: 6%;
+   width: 3%;
+   left: 5%;
   bottom: 46%;
   background: #dffdfa;
   border-radius: 4rem;
