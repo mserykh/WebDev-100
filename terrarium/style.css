@@ -37,14 +37,19 @@ h1 {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  position: relative;
+}
+
+.plant-holder {
+  height: 13%;
+  position: relative;
 }
 
 .plant {
-  display: block;
-  height: 20vh;
-  margin: 0 auto;
-  margin-bottom: -7vh;
-
+  position: absolute;
+  max-height: 150%;
+  max-width: 150%;
+  z-index: 2;
 }
 
 .container picture:last-of-type img {
