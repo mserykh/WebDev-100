@@ -1,4 +1,4 @@
-html {
+html, figure {
   margin: 0;
 }
 
@@ -26,7 +26,8 @@ h1 {
 .container {
  grid-row: 1 / 3;
  align-content: center;
- margin: auto;
+ margin: 1vh auto;
+ z-index: 2;
 }
 
 .terrarium {
@@ -42,7 +43,8 @@ h1 {
   display: block;
   height: 20vh;
   margin: 0 auto;
-  margin-bottom: -8vh;
+  margin-bottom: -7vh;
+
 }
 
 .container picture:last-of-type img {
