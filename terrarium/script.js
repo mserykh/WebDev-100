@@ -17,8 +17,11 @@ function dragElement(terrariumElement) {
   let pos1 = 0,
     pos2 = 0,
     pos3 = 0,
-    pos4 = 0;
+    pos4 = 0,
+    zIndex = 2;
   terrariumElement.onpointerdown = pointerDrag;
+  terrariumElement.ondblclick = elementToFront;
+
 
   function pointerDrag(e) {
     e.preventDefault();
@@ -41,4 +44,10 @@ function dragElement(terrariumElement) {
     document.onpointerup = null;
     document.onpointermove = null;
   }
+
+  function elementToFront(e) {
+    terrariumElement.style.zIndex = zIndex++ + 1;
+    zIndex = terrariumElement.style.zIndex;
+  }
+
 }
