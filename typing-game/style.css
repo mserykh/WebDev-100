@@ -82,6 +82,10 @@ label {
   margin-left: 0;
 }
 
+input:disabled {
+  background-color: #ccc;
+}
+
 button:focus {
   outline: none;
 }
