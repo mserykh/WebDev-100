@@ -14,14 +14,18 @@ body {
   min-height: 100vh;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
   text-align: left;
   margin: 2rem auto;
-  padding: 2rem 4rem;
-  box-shadow: inset 0 3px 7px 0 #fff, 0 0 3px 0 #fff;
-  width: 40rem;
+  padding: 1rem 4rem;
+  background-color: rgba(250, 217, 157, 0.15);
+  box-shadow: inset 0 3px 7px 0 rgba(229, 142, 255, 0.25);
+  max-width: 50rem;
+  border-radius: 0.25rem;
 }
 
 h1 {
@@ -41,10 +45,10 @@ h1 {
 button {
   display: block;
   font-family: sans-serif;
-  font-size: 1.5rem;
   padding: 0.5rem;
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
   border: none;
+  margin-bottom: 2rem;
 }
 
 .label-box {
@@ -53,18 +57,18 @@ button {
 }
 
 #typed-value {
-  margin-bottom: 2rem;
   box-shadow: inset 0 3px 7px 0 #ccc, 0 0 3px 0 #fff;
   color: #555;
   padding: 1rem;
   width: 100%;
+  font-size: 1.2rem;
 }
 
 label {
   position: absolute;
   top: -4.5rem;
   color: #555;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   transition: 0.2s ease all;
   pointer-events: none;
   margin-left: 1rem;
@@ -73,19 +77,48 @@ label {
 #typed-value:focus ~ .label-box label,
 #typed-value:valid ~ .label-box label {
   font-size: 1rem;
-  transform: translateY(-3rem);
+  transform: translateY(-2.5rem);
   color: #fff;
+}
+
+button:focus {
+  outline: none;
+}
+
+#typed-value:focus {
+  outline: none;
+  box-shadow: inset 0 0 10px 2px rgba(153, 19, 70, 0.65);
 }
 
 button {
   background: linear-gradient(to right, #f1a820, #ff7300);
   padding: 0.5rem 2rem;
   color: white;
-  box-shadow: inset 2px 3px 7px 0 #ff7300, 0 0 3px 0 #fff;
+  box-shadow: inset 2px 3px 7px 0 #ff7300, 0 0 3px 0 rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  font-size: 1.5rem;
+  transform: translateY(2px);
+  transition: transform 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(to left, #f1a820, #ff7300);
+  transform: translateY(-2px);
+  transition: transform 0.5s ease;
+}
+
+button:active {
+  background: #ff7300;
+}
+
+#quote {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
 }
 
 .highlight {
   background-color: yellow;
+  color: black;
 }
 
 .error {
