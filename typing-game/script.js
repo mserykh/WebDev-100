@@ -12,6 +12,26 @@ const quotes = [
 let words = [];
 let wordIndex = 0;
 let startTime = Date.now();
-const quoteValue = document.getElementById('quote');
+const quoteElement = document.getElementById('quote');
 const messageElement = document.getElementById('message');
 const typeValueElement = document.getElementById('typed-value');
+const startButton = document.getElementById('start');
+
+startButton.addEventListener('click', () => {
+    const quoteIndex = Math.floor(Math.random() * quotes.length);
+    const quote = quotes[quoteIndex];
+
+    words = quote.split(' ');
+
+    wordIndex = 0;
+
+    const spanWords = words.map(function(word) {return `<span>${word} </span>`});
+
+    quoteElement.innerHTML = spanWords.join('');
+    quoteElement.childNodes[0].className = 'highlight';
+
+    messageElement.innerText = '';
+
+    typedValueElement.value = '';
+    startTime = new Date().getTime();
+});
