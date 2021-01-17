@@ -13,7 +13,7 @@ body {
   font-family: sans-serif;
   min-height: 100vh;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
@@ -24,7 +24,8 @@ body {
   padding: 1rem 4rem;
   background-color: rgba(250, 217, 157, 0.15);
   box-shadow: inset 0 3px 7px 0 rgba(229, 142, 255, 0.25);
-  max-width: 50rem;
+  width: 70vw;
+  max-width: 1000px;
   border-radius: 0.25rem;
 }
 
